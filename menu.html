@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dessert Learning - Recipes & Tutorial.</title>
+  <link rel="shortcut icon" type="image/png" href="logo.png"/>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: linear-gradient(to bottom right, #a1c4e6, #a1c4e6);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* NAVIGATION BAR */
+    nav {
+      background: #ebcdb2;
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul { list-style: none; display: flex; gap: 15px; flex-wrap: wrap; }
+
+    li a {
+      padding: 12px 18px;
+      font-size: 16px;
+      color: black;
+      border-radius: 5px;
+      transition: background 0.3s, opacity 0.3s;
+      text-shadow: 1px 1px 5px floralwhite;
+    }
+
+    li a:hover { background-color: white; opacity: 0.7; }
+
+    /* PRODUCTS SECTION */
+    .products-section { padding: 40px 20px; }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    /* VIDEO SECTION */
+    .video-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #ebcdb2;
+      color: #333;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Recipes & Tutorial</a></li>
+      <li><a href="classesquizzes.html">Classes & Quizzes</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="qna.html">FAQs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <section class="products-section">
+    <h2 style="text-align:center; margin-bottom: 30px;">Dessert Learning Recipes</h2>
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <img src="chocolate-mousse-featured.webp" alt="Chocolate Mousse">
+        <h3>Chocolate Mousse</h3>
+        <p>
+          Ingredients: 20 Oreo biscuits, 3 tbsp melted butter, 250g cream cheese, 4 tbsp sugar, ½ cup whipping cream.
+          <br><br>
+          Steps: Crush Oreos + melted butter → press into a pan, Beat cream cheese + sugar, Whip cream, then fold into cream cheese, Pour onto Oreo base, chill 3–4 hours.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <img src="kekbatik1.jpeg" alt="Kek Batik">
+        <h3>Kek Batik</h3>
+        <p>
+          Ingredients: 250g Marie biscuits, 1 can condensed milk, 3 tbsp cocoa powder, 3 tbsp butter, 1 cup water.
+          <br><br>
+          Steps: Break biscuits into a bowl, Cook butter, condensed milk, cocoa, and water, Pour the chocolate mixture over the biscuits, Mix until all biscuits are coated, Press into a tray lined with baking paper, Chill, cut and serve.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <img src="No-Bake-Oreo-Cheesecake4-1.jpg" alt="Oreo Cheesecake">
+        <h3>Oreo Cheesecake</h3>
+        <p>
+          Ingredients: 1 cup whipping cream, ½ cup chocolate chips, 1 tbsp sugar.
+          <br><br>
+          Steps: Melt chocolate chips in the microwave, Whip cream + sugar until soft peaks form, Add melted chocolate into the cream and mix slowly, Chill for 1 hour.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <img src="cc.jpg" alt="cp">
+        <h3>Caramel Pudding</h3>
+        <p>
+          Ingredients: 2 tbsp sugar (for caramel), 1 cup milk, 1 egg, 2 tbsp sugar, ½ tsp vanilla.
+          <br><br>
+          Steps: Melt 2 tbsp sugar in a pan → pour into a cup, Mix milk + egg + sugar + vanilla, Pour mixture into the cup, Steam 15 minutes.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <img src="pumpkin-churro-french-toast-bites-3.jpg" alt="csb">
+        <h3>Cinnamon Sugar Bites</h3>
+        <p>
+          Ingredients: Bread (cut into small cubes), Butter, Sugar + cinnamon.
+          <br><br>
+          Steps: Melt butter, toss bread cubes in it, Coat with cinnamon sugar, Bake 10 mins or air-fry 6 mins.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <img src="5faa9bf530230e6294ea8f49d6d0aff9.jpg" alt="cc">
+        <h3>Chocolate Cornflakes</h3>
+        <p>
+          Ingredients: 2 cups cornflakes, 1 cup melted chocolate, Sprinkles (optional).
+          <br><br>
+          Steps: Pour melted chocolate over cornflakes, Mix gently, Scoop into small cups, refrigerate 20 mins.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <img src="images.jpeg" alt="cc">
+        <h3>Creme Caramel</h3>
+        <p>
+          Ingredients: 1 cup milk, 1 egg, 2 tbsp sugar.
+          <br><br>
+          Steps: Melt 2 tbsp sugar until golden and pour into a cup, Mix milk + egg + sugar, Steam 10–12 mins.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <img src="peach-yogurt-popsicles-recipe-3.webp" alt="pyp">
+        <h3>Peach Yogurt Popsicles</h3>
+        <p>
+          Ingredients: 1 cup yogurt, 1 tbsp honey, Sliced peaches.
+          <br><br>
+          Steps: Mix yogurt + honey, Add peach slices, Freeze in molds.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="video-section" style="text-align:center; padding:40px 40px;">
+  <h1>Kek Batik Tutorial</h1>
+
+  <video width="560" controls>
+    <source src="kekbatikmade.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="video-section" style="text-align:center; padding:40px 40px;">
+  <h1>Chocolate Mousse Tutorial</h1>
+
+  <video width="560" controls>
+    <source src="ChocolateMousse.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="video-section" style="text-align:center; padding:40px 40px;">
+  <h1>Peach Yogurt Popsicles Tutorial</h1>
+
+  <video width="560" controls>
+    <source src="peachpopsicles.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Dessert Learning. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

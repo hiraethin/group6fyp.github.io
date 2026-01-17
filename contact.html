@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dessert Learning - Contact Us.</title>
+  <link rel="shortcut icon" type="image/png" href="logo.png"/>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { font-family: "Comic Sans MS", cursive, sans-serif; background: linear-gradient(to bottom right, #a1c4e6, #a1c4e6); color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+
+    nav { background: #ebcdb2; padding: 15px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+    .nav-container { display: flex; justify-content: center; }
+
+    ul.nav-list { list-style: none; display: flex; gap: 15px; flex-wrap: wrap; }
+
+    li a { padding: 10px 16px; font-size: 16px; color: #333; border-radius: 8px; text-shadow: 1px 1px 5px white; text-decoration: none; transition: background 0.3s ease; }
+
+    li a:hover { background-color: white; opacity: 0.8; }
+
+    main { flex: 1; padding: 40px 20px; display: flex; justify-content: center; }
+
+    .contact-box { background: rgba(255, 255, 255, 0.6); padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 600px; width: 100%; }
+
+    .contact-box h1 { text-align: center; font-size: 30px; margin-bottom: 25px; }
+
+    .contact-box p { font-size: 16px; margin: 10px 0; }
+
+    /* Social toggle setup */
+    #toggle-social { display: none; }
+
+    label[for="toggle-social"] { display: block; font-weight: 600; cursor: pointer; padding: 10px 15px;background: rgba(255, 255, 255, 0.4); border-radius: 8px; border: 1px solid #ccc; margin-top: 20px;transition: background 0.3s ease; font-size: 16px; }
+
+    label[for="toggle-social"]:hover { background: rgba(255, 255, 255, 0.6); }
+
+    .social-list { list-style: none; padding-left: 20px; max-height: 0; overflow: hidden; transition: max-height 0.6s ease; }
+
+    .social-list li { margin: 6px 0; opacity: 0; transform: translateY(-5px); transition: opacity 0.4s ease, transform 0.4s ease; }
+
+    #toggle-social:checked ~ .social-list { max-height: 500px; }
+
+    #toggle-social:checked ~ .social-list li { opacity: 1; transform: translateY(0); }
+
+    footer { text-align: center; padding: 20px; font-size: 14px; background-color: #ebcdb2 ;color: #333; }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Recipes & Tutorial</a></li>
+      <li><a href="classesquizzes.html">Classes & Quizzes</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="qna.html">FAQs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="contact-box">
+      <h1>📬 Contact Us</h1>
+
+      <p><strong>📞 Phone Number:</strong> +60123456789 </p>
+      <p><strong>🌐 Website:</strong> <a href="https://www.DessertLearningHQ.com" target="_blank">www.DessertLearningHQ.com</a></p>
+      <p><strong>📧 Email:</strong> dessertlearninghq@business.com</p>
+
+      <input type="checkbox" id="toggle-social" />
+      <label for="toggle-social">📱 Social Media ▼</label>
+
+      <ul class="social-list">
+        <li>Twitter: @dessertlearning</li>
+        <li>Instagram: @dessertlearning</li>
+        <li>Facebook: DessertLearningHQ</li>
+        <li>TikTok: @dessertlearninghq</li>
+      </ul>
+
+      <p style="margin-top: 20px;"><strong>📍 Address:</strong> Puncak Perdana, Shah Alam, Selangor.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Dessert Learning. All Rights Reserved.
+  </footer>
+</body>
+</html>
